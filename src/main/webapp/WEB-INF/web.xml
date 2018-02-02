@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>uploadtooss</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Upload</display-name>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>servlet.Upload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/uploadto</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UploadTo</display-name>
+    <servlet-name>UploadTo</servlet-name>
+    <servlet-class>servlet.UploadTo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadTo</servlet-name>
+    <url-pattern>/UploadTo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>QuickResponseServlet</display-name>
+    <servlet-name>QuickResponseServlet</servlet-name>
+    <servlet-class>servlet.QuickResponseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuickResponseServlet</servlet-name>
+    <url-pattern>/QRCode</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TipToWeChatServlet</display-name>
+    <servlet-name>TipToWeChatServlet</servlet-name>
+    <servlet-class>servlet.TipToWeChatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TipToWeChatServlet</servlet-name>
+    <url-pattern>/TipToWeChatServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+</web-app>
