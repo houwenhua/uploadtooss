@@ -50,5 +50,4 @@
     <url-pattern>/TipToWeChatServlet</url-pattern>
   </servlet-mapping>
   
- 
 </web-app>
