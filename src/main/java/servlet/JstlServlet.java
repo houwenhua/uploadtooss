@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang.ArrayUtils;
+
 @WebServlet(name = "JstlServlet",urlPatterns = "/jstlServlet")
 public class JstlServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,7 +37,7 @@ public class JstlServlet extends HttpServlet {
         Cookie[] cookies = request.getCookies();
         Map<String,String> map1 = new HashMap<String,String>();
         List list1 = new ArrayList();
-        if(cookies!=null){
+        if(ArrayUtils.isNotEmpty(cookies) && cookies != null){
             for(int i = 0; i < cookies.length; i++){
                 Cookie c = cookies[i];
                 map1.put(c.getName(),c.getValue());
